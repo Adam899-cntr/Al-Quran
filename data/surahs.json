@@ -1,0 +1,72 @@
+[
+  {
+    "number": 1,
+    "arabic": "الفاتحة",
+    "russian": "Аль-Фатиха",
+    "english": "Al-Fatihah",
+    "verses": 7
+  },
+  {
+    "number": 2,
+    "arabic": "البقرة",
+    "russian": "Аль-Бакара",
+    "english": "Al-Baqarah",
+    "verses": 286
+  },
+  {
+    "number": 3,
+    "arabic": "آل عمران",
+    "russian": "Али Имран",
+    "english": "Ali 'Imran",
+    "verses": 200
+  },
+  {
+    "number": 4,
+    "arabic": "النساء",
+    "russian": "Ан-Ниса",
+    "english": "An-Nisa",
+    "verses": 176
+  },
+  {
+    "number": 5,
+    "arabic": "المائدة",
+    "russian": "Аль-Маида",
+    "english": "Al-Ma'idah",
+    "verses": 120
+  },
+  {
+    "number": 6,
+    "arabic": "الأنعام",
+    "russian": "Аль-Ан'ам",
+    "english": "Al-An'am",
+    "verses": 165
+  },
+  {
+    "number": 7,
+    "arabic": "الأعراف",
+    "russian": "Аль-Араф",
+    "english": "Al-A'raf",
+    "verses": 206
+  },
+  {
+    "number": 8,
+    "arabic": "الأنفال",
+    "russian": "Аль-Анфаль",
+    "english": "Al-Anfal",
+    "verses": 75
+  },
+  {
+    "number": 9,
+    "arabic": "التوبة",
+    "russian": "Ат-Тауба",
+    "english": "At-Tawbah",
+    "verses": 129
+  },
+  {
+    "number": 10,
+    "arabic": "يونس",
+    "russian": "Юнус",
+    "english": "Yunus",
+    "verses": 109
+  }
+]
