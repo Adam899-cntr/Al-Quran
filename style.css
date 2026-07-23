@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+
+body{
+    background:linear-gradient(180deg,#06111f,#0b1c2d,#12283c);
+    color:white;
+    min-height:100vh;
+}
+
+header{
+    text-align:center;
+    padding:50px 20px 25px;
+}
+
+header h1{
+    color:#FFD700;
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+header p{
+    color:#d6d6d6;
+    font-size:18px;
+}
+
+.search{
+    padding:20px;
+}
+
+.search input{
+    width:100%;
+    padding:18px;
+    border:none;
+    outline:none;
+    border-radius:18px;
+    color:white;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(20px);
+    font-size:17px;
+}
+
+.cards{
+    padding:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+    gap:18px;
+}
+
+.card{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.12);
+    backdrop-filter:blur(25px);
+    border-radius:24px;
+    padding:28px;
+    transition:.3s;
+    text-align:center;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#FFD700;
+}
+
+.card h2{
+    margin-top:12px;
+    color:#FFD700;
+}
+
+.card p{
+    margin-top:8px;
+    color:#d7d7d7;
+}
+
+.menu{
+    position:fixed;
+    bottom:15px;
+    left:15px;
+    right:15px;
+    display:flex;
+    justify-content:space-around;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(30px);
+    border-radius:22px;
+    padding:16px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-size:15px;
+}
+
+.menu a:hover{
+    color:#FFD700;
+}
