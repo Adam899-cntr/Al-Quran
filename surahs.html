@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Все суры</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="top">
+
+<div class="logo">
+
+<div class="logo-icon">📖</div>
+
+<div>
+
+<h1>Все суры</h1>
+
+<p>114 сур Священного Корана</p>
+
+</div>
+
+</div>
+
+</header>
+
+<section class="search">
+
+<input
+type="text"
+id="search"
+placeholder="🔍 Найти суру...">
+
+</section>
+
+<section class="grid" id="surahList">
+
+</section>
+
+<footer class="bottom">
+
+<a href="index.html">🏠</a>
+
+<a href="surahs.html">📖</a>
+
+<a href="#">🎧</a>
+
+<a href="#">⭐</a>
+
+<a href="#">⚙️</a>
+
+</footer>
+
+<script>
+
+let surahs=[];
+
+fetch("data/surahs.json")
+
+.then(r=>r.json())
+
+.then(data=>{
+
+surahs=data;
+
+draw(data);
+
+});
+
+function draw(list){
+
+const box=document.getElementById("surahList");
+
+box.innerHTML="";
+
+list.forEach(s=>{
+
+box.innerHTML+=`
+
+<a href="surah.html?id=${s.number}" class="card">
+
+<div class="icon">${s.number}</div>
+
+<h3>${s.arabic}</h3>
+
+<span>${s.russian}</span><br>
+
+<span>${s.verses} аятов</span>
+
+</a>
+
+`;
+
+});
+
+}
+
+document.getElementById("search").addEventListener("input",e=>{
+
+const q=e.target.value.toLowerCase();
+
+draw(
+
+surahs.filter(s=>
+
+s.russian.toLowerCase().includes(q)
+
+||
+
+s.arabic.includes(q)
+
+||
+
+String(s.number).includes(q)
+
+)
+
+);
+
+});
+
+</script>
+
+</body>
+</html>
